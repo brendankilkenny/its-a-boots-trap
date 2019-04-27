@@ -2,8 +2,27 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+a {
+    color: #ffbe48;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #d08600;
+    text-decoration: none;
+}
+
+.container-wrapper {}
+
+.container-wrapper--burgundy {
+    background: #9c0000;
+    color: #efefef;
+}
+
+
+
 .alert-container {
-    background-color: red;
+    background-color: #9c0000;
 }
 
 .callout-container {
@@ -19,7 +38,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    
+
     top: 50%;
 }
 
@@ -40,24 +59,45 @@ body {
 
 .monthlyFavourites {}
 
+/*Page headers start*/
 
+.page-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.page-header h2 {
+    margin-top: 0;
+}
+
+/*Page headers ends*/
 
 /*block-dividers-start*/
 
 .block-divider {
-    width: 75px;
-    height: 5px;
+    width: 200px;
+    height: 1px;
     border: 0px;
-    background-color: #444;
+}
+
+.block-divider--short {
+    width: 150px;
 }
 
 .block-divider--burgundy {
     background-color: #9c0000;
 }
 
-.block-divider--short {
-    width: 35px;
+.block-divider--grey {
+    background-color: #444;
 }
+
+.block-divider--white {
+    background-color: #efefef;
+}
+
 
 /*block-dividers-end*/
 
@@ -89,11 +129,18 @@ body {
 }
 
 
-
-
 /*jumbotron-end*/
 
-/*Nav bar start */
+/*Content container start*/
+
+.content-container {
+    padding-top: 50px;
+    padding-bottom: 75px;
+}
+
+/*Content container end*/
+
+/*Navbar start */
 
 .navalert-container {
     position: absolute;
@@ -115,7 +162,7 @@ body {
     border: 0px;
 }
 
-/*Nav bar ends*/
+/*Navbar ends*/
 
 /*Buttons-start*/
 
@@ -125,19 +172,49 @@ body {
     width: 160px;
 }
 
-.btn--red {
-    color: white;
+.btn--burgundy {
+    color: #efefef;
     background-color: #9c0000;
-    border-color: white;
+    border-color: #efefef;
     border-width: 0px;
 }
 
-.btn--red:hover,
-.btn--red:active,
-.btn--red:focus,
-.btn--red:active:focus {
+.btn--burgundy:hover,
+.btn--burgundy:active,
+.btn--burgundy:focus,
+.btn--burgundy:active:focus {
     background-color: #dc3545;
 }
 
 
 /*Buttons-end*/
+
+.features {
+    text-align: center;
+}
+
+.features i {
+    color: #d08600;
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height 45px;
+}
+
+.features .btn {
+    color: #9c0000;
+    background-color: #efefef;
+    border-radius: 15px;
+    min-width: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.features .btn:hover {
+    color: #efefef;
+    background-color: #cc0606;
+
+}
+
+.badge-orange{
+    background-color: #cc0606;
+}
